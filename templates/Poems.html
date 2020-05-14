@@ -1,0 +1,100 @@
+
+
+{% extends "layout.html" %}
+
+{% block sidebar%}
+
+
+<nav class="nav nav-fixed-right">
+	<ul class="list-inline-personal" >
+		<li >First</li>
+		<li >Second</li>
+	</ul>
+
+</nav>
+
+{% endblock %}
+
+{% block body %}
+
+
+
+<div class="page-header"> <h1> My Mom's Birthday </h1></div>
+
+<!-- First Row .. first  Para -->
+<div class="row">
+    <div class="col-lg-4">
+<p> Wishing you a "Happy Birthday",<br>
+Is a drop of Ocean of my wishes,<br>
+For my feelings, as Today, <br>
+Dictionary has words in pieces,<br>
+So thoughts, dreams and kisses,<br>
+let us together cherish,<br>
+let me be on your feet,<br>
+Before the evening perish. <br>
+
+</p>
+
+
+    </div>
+	<div class="col-lg-4">
+			<img src={{ url_for('static', filename='images/1.JPG') }} class = "img-thumbnail">
+
+		</div>
+
+	<div class="col-lg-4"></div>
+</div>
+
+<!-- First  Para Ends Here -->
+
+<div class="row">
+	<div class="col-lg-2"></div>
+	<div class="col-lg-4">
+		<p> Shall I be called, "A Momma's Boy", <br>
+			For days, months and even years to come,<br>
+			Deeper down the memory lane, <br>
+			I Know the days of your struggle,<br>
+			of your Love that shaped me up,<br>
+			And Your anger, that made me flaw less,<br>
+			Also your hidden grief, that gave me blessings,<br>
+			And your hopes for me, <br>
+				sketched a map, for me to go ahead... <br>
+
+</p>
+	</div>
+
+	<div class="col-lg-4">
+
+				<img src={{ url_for('static', filename='images/2.JPG') }} class = "img-thumbnail">
+
+			</div>
+	<div class="col-lg-2"></div>
+</div>
+<div class="row">
+
+	<div class="col-lg-4">
+
+				<img src={{ url_for('static', filename='images/3.JPG') }} class = "img-thumbnail">
+
+			</div>
+
+	<div class="col-lg-4">
+<p> A day shall proclaim,<br>
+You to be Proud of me,<br>
+As Proud I always am,<br>
+to be your son indeed,<br>
+But I want that day, you to have a tear,<br>
+	a tear of happiness flowing down your cheeks... <br>
+
+</p>
+
+    </div>
+	<div class="col-lg-4">
+
+	</div>
+</div>
+
+
+
+
+{% endblock %}

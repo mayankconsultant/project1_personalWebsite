@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.css') }}">
+
+    <!--
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/w3css.css') }}">
+    <title>MY WEBSITE</title>
+    <style type="text/css">
+    p {
+    padding: 20px;
+    background :#FFF0F5;
+    border-radius:5px;
+    }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg text-primary">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href={{ url_for( 'index' ) }}>Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href={{ url_for( 'poems' ) }} >Poems</a>
+                    <a class="nav-item nav-link" href={{ url_for( 'programe' ) }} >Programming</a>
+                    <a class="nav-item nav-link" href={{ url_for( 'edu' ) }} >Education</a>
+                    </div>
+                </div>
+
+  </nav>
+    <div class="container">
+        <div class="sidebar text-primary">
+            {% block sidebar %}
+            {% endblock %}
+        </div>
+    </div>
+            <div class="container">
+
+            {% block body %}
+            {% endblock %}
+
+
+        </div>
+</body>
+</html>
